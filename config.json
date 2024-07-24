@@ -1,7 +1,9 @@
 {
     "title":"Peter's Blog",
-    "avatarUrl":"https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg",
     "subTitle":"无限进步！（目前博客还处于搭建阶段，会出现各种不可描述的bug，马上搞完）",
+    "avatarUrl":"https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg",
+    "faviconUrl":"https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg",
+    "displayTitle":"Peter",
     "singlePage":["link","about"],
     "homeUrl":"https://peter267.github.io/",
     "email":"miaomiaoweiqi@163.com",
