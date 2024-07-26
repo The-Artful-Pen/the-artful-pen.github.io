@@ -1,5 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 26 Jul 2024 06:10:02 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>RSS是个甚么东东</title><link>https://peter267.github.io//post/8.html</link><description># 前言&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 26 Jul 2024 10:07:44 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>开源模型比闭源强？Llama3.1-405b发布！</title><link>https://peter267.github.io//post/9.html</link><description>## 前言&#13;
+前天，MetaAI发布了超大尺寸的开源模型——Llama3.1-405b，使用Ollama就可以部署，教程参照上上期博客，在cmd窗口输入部署命令即可&#13;
+## 部署&#13;
+| 模型尺寸      | 模型大小 |  部署命令  |&#13;
+| ----------- | ----------- |----------- |&#13;
+| llama3.1-8b      | 4.7GB       |  `ollama run llama3.1:8b`&#13;
+| llama3.1-70b   |     40GB |    `ollama run llama3.1:70b`&#13;
+| llama3.1-405b  | 231GB |`ollama run llama3.1:405b` |&#13;
+## 官方描述&#13;
+### Meta Llama 3.1&#13;
+![4d0cab8e-952b-4c75-b110-1514d8db8fae](https://github.com/user-attachments/assets/2909eed4-fa28-4e65-a0c4-8758bb5a213d)&#13;
+**Llama 3.1**模型系列可用： &#13;
+- **8B**&#13;
+- **70B**&#13;
+- **405B**&#13;
+&#13;
+Llama 3.1 405B 是首个公开可用的模型，在常识、可操控性、数学、工具使用和多语言翻译等方面的先进能力上可与顶级人工智能模型相媲美。</description><guid isPermaLink="true">https://peter267.github.io//post/9.html</guid><pubDate>Fri, 26 Jul 2024 10:07:22 +0000</pubDate></item><item><title>RSS是个甚么东东</title><link>https://peter267.github.io//post/8.html</link><description># 前言&#13;
 大家在浏览独立博客网站时可能会发现，有的网站内有个类似于手机WI-FI标志的按钮，这其实是RSS（简易信息聚合）订阅。</description><guid isPermaLink="true">https://peter267.github.io//post/8.html</guid><pubDate>Fri, 26 Jul 2024 06:09:37 +0000</pubDate></item><item><title>告别云担忧：手把手教你本地部署AI大模型</title><link>https://peter267.github.io//post/6.html</link><description>## 前言&#13;
 当我们想跟AI对话时，把一些文件发送到云端可能会不安全，这时候，就需要本地部署了。</description><guid isPermaLink="true">https://peter267.github.io//post/6.html</guid><pubDate>Tue, 23 Jul 2024 03:44:25 +0000</pubDate></item><item><title>勇气：雷军与小米的非凡旅程</title><link>https://peter267.github.io//post/4.html</link><description>&#13;
 ![92f8fca6efd5c045852b447894905056eecf72f9 3](https://github.com/user-attachments/assets/46e30fa9-b528-4db3-8fb1-b8a2b7aff261)&#13;
