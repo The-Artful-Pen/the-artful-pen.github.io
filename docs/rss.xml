@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 02 Aug 2024 06:15:59 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>如何让本地部署的大模型有个优雅的界面</title><link>https://peter267.github.io//post/11.html</link><description>## 前言&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 09 Aug 2024 09:58:31 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>点击查看详情</title><link>https://peter267.github.io//post/12.html</link><description>新博客配置完成啦，欢迎来到[PeterTech](peter267.zeabur.app)！下面是Q&amp;A&#13;
+Q：这个博客怎么办&#13;
+还没想好，应该是同步更新吧&#13;
+Q：功能上有什么变化&#13;
+- 关于本站→Footer（页脚）→信息→关于本站&#13;
+- 友情链接→友链→友人帐&#13;
+- 思考箱→即刻短文&#13;
+- RSS→这个功能有点bug，我再看看&#13;
+新增的功能**数不胜数**！&#13;
+（本来想写长点的，没文化啊）。</description><guid isPermaLink="true">https://peter267.github.io//post/12.html</guid><pubDate>Fri, 09 Aug 2024 09:58:05 +0000</pubDate></item><item><title>如何让本地部署的大模型有个优雅的界面</title><link>https://peter267.github.io//post/11.html</link><description>## 前言&#13;
 有人可能受不了本地大模型这样辣鸡的聊天界面，本期博客教大家如何拥有一个**优雅的聊天界面**&#13;
 ![4ab8d016-3abe-4c05-a826-e37cdb8a3596](https://github.com/user-attachments/assets/e584e938-f8d2-404a-b582-df752bbd5460)&#13;
 ## 准备&#13;
