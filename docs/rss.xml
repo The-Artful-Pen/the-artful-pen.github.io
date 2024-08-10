@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 09 Aug 2024 10:01:28 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>点击查看详情</title><link>https://peter267.github.io//post/12.html</link><description>新博客配置完成啦，欢迎来到peter267.zeabur.app！下面是Q&amp;A&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Sat, 10 Aug 2024 03:48:35 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>如何流畅访问Github</title><link>https://peter267.github.io//post/13.html</link><description>&gt; 水的一篇文，下周旅游更没时间写&#13;
+## 前言&#13;
+众所周知，Github是全球最大的**同性交友平台**，但还是众所周知，Github现在是处于一个半墙不墙的状态，有用户访问会特别快，有用户压根进不去，本篇博客教大家如何流畅访问Github！&#13;
+## 教程&#13;
+打开微软应用商店，搜索Watt Toolkit，这是大名鼎鼎的Steam++，只不过是改名了。</description><guid isPermaLink="true">https://peter267.github.io//post/13.html</guid><pubDate>Sat, 10 Aug 2024 03:48:11 +0000</pubDate></item><item><title>点击查看详情</title><link>https://peter267.github.io//post/12.html</link><description>新博客配置完成啦，欢迎来到peter267.zeabur.app！下面是Q&amp;A&#13;
 Q：这个博客怎么办&#13;
 还没想好，应该是同步更新吧&#13;
 Q：功能上有什么变化&#13;
