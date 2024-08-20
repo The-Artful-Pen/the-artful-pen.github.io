@@ -105,7 +105,7 @@
  | bottomText         |    用于设置文章页面右下角显示的内容      |
  | ogImage         | 用于设置Open Graph协议展示的图片         |
  |  primerCSS        | 用于设置primer.css的CDN地址，默认使用[南科大](https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css)         |
- |    needComment      | [用于设置是否需要评论功能，1开启评论，0关闭（如果想使用评论，请[下载utterances评论](https://github.com/apps/utterances)）      |
+ |    needComment      | 用于设置是否需要评论功能，1开启评论，0关闭（如果想使用评论，请[下载utterances评论](https://github.com/apps/utterances)）      |
 ## 三、代码示范
 ### ✅ 正确代码
 ```
