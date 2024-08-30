@@ -1,5 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Tue, 20 Aug 2024 10:11:24 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>Gmeek框架：18秒拥有属于自己的个人博客！</title><link>https://peter267.github.io//post/14.html</link><description>&gt; 温馨提示，本文章转载自[Meekdai-Gmeek快速上手](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)，但我认为本文比原文更加细致&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 30 Aug 2024 12:40:52 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>GithubModels：免费AI大模型</title><link>https://peter267.github.io//post/15.html</link><description>&gt; 真写不出啥来了，凑合看吧😪&#13;
+## 前言&#13;
+在国内，当我们想跟GPT-4o聊天时，并且还是多次的，简直是~~想peach~~，几乎没有什么平台能让你每天多次跟GPT聊天的，可现在，**它来了**！&#13;
+![image](https://peterimg.pages.dev/file/587e048f9b4c5f7337d83.png)&#13;
+## 申请资格&#13;
+GithubModels 是一个大模型测试平台，需要加入等待列表等待审批后使用的，如果你还没有申请，[点击申请](https://github.com/marketplace/models/waitlist/join)，我从申请到通过花了3周左右&#13;
+## 食用&#13;
+好的，你已经申请成功了！现在来聊天吧，[点击这里](https://github.com/marketplace?type=models)来聊天吧！&#13;
+![一如既往](https://peterimg.pages.dev/file/0bfde365f399d48428f36.png)&#13;
+你也可以在左侧调整模型的参数，如下&#13;
+![image](https://peterimg.pages.dev/file/6bbbfb9b02700ab169f26.png)&#13;
+## 限制&#13;
+不同型号的模型有着不同的限制，分为Low、High、Embedding，你可以在这里查看模型的种类&#13;
+![image](https://peterimg.pages.dev/file/4af9b9dcec36c8774537f.png)&#13;
+相关限制如下：&#13;
+![image](https://peterimg.pages.dev/file/c3aac4f69887a6872ac0c.png)&#13;
+&#13;
+&#13;
+。</description><guid isPermaLink="true">https://peter267.github.io//post/15.html</guid><pubDate>Fri, 30 Aug 2024 12:40:15 +0000</pubDate></item><item><title>Gmeek框架：18秒拥有属于自己的个人博客！</title><link>https://peter267.github.io//post/14.html</link><description>&gt; 温馨提示，本文章转载自[Meekdai-Gmeek快速上手](https://blog.meekdai.com/post/Gmeek-kuai-su-shang-shou.html)，但我认为本文比原文更加细致&#13;
 &#13;
 [Gmeek](https://github.com/Meekdai/Gmeek) 是一个博客框架，超轻量级个人博客模板，完全基于`Github Pages` 、 `Github Issues` 和 `Github Actions`，可以称作`All in Github`。</description><guid isPermaLink="true">https://peter267.github.io//post/14.html</guid><pubDate>Tue, 20 Aug 2024 10:10:56 +0000</pubDate></item><item><title>如何流畅访问Github</title><link>https://peter267.github.io//post/13.html</link><description>&gt; 水的一篇文，下周旅游更没时间写&#13;
 ## 前言&#13;
