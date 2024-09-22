@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/assets/GmeekVercount.js'></script>
+    <link rel="icon" href="https://vip.helloimg.com/i/2024/07/31/66aa2568dfba1.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="## 前言
+
+最近我苦于寻找一个可以永久使用的图床，看了看，好像只能是自己部署，那就来吧。">
+<meta property="og:title" content="博客图床新方案——自部署LightPicture">
+<meta property="og:description" content="## 前言
+
+最近我苦于寻找一个可以永久使用的图床，看了看，好像只能是自己部署，那就来吧。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://peter267.github.io//post/17.html">
+<meta property="og:image" content="https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg@240w_240h_1c_1s_!web-avatar-nav.avif">
+<title>博客图床新方案——自部署LightPicture</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+.copy-feedback {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    color: var(--color-fg-on-emphasis);
+    background-color: var(--color-fg-muted);
+    border-radius: 3px;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">博客图床新方案——自部署LightPicture</h1>
+<div class="title-right">
+    <a href="https://peter267.github.io/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/Peter267/peter267.github.io/issues/17" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h2>前言</h2>
+<p>最近我苦于寻找一个可以永久使用的图床，看了看，好像只能是自己部署，那就来吧。本期博客教大家使用小皮面板本地部署图床。</p>
+<h2>为什么是LightPicture</h2>
+<blockquote>
+<p>其实很想用兰空，但我不会啊</p>
+</blockquote>
+<p>LightPicture是开源免费的图床工具，界面颜值很高，同时支持多用户，使用邮箱发送验证码注册等。</p>
+<h2>准备</h2>
+<h3>Lightpicture文件</h3>
+<p>不知道为啥，LightPicture官方下载地址没了，我把文件放在网盘里了，文末自取</p>
+<h3>PhpStudy</h3>
+<p>您需要下载<a href="https://old.xp.cn" rel="nofollow">PhpStudy（小皮面板）</a>，并将下载好并解压的LightPicture文件放到小皮的<code class="notranslate">WWW</code>文件夹下，如下图<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1c3c36a3afee9860ed1f0b02a775ec1259414997c59faed57747880266ac70c5/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666537326262636264362e706e67"><img src="https://camo.githubusercontent.com/1c3c36a3afee9860ed1f0b02a775ec1259414997c59faed57747880266ac70c5/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666537326262636264362e706e67" alt="image-20240921144204946.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe72bbcbd6.png" style="max-width: 100%;"></a></p>
+<p>打开小皮，启动小皮面板，打开软件管理=&gt;php，安装7.2~7.4版本的php，其他配置（如MySQL和Nginx）同理（Mysql版本 ≥ 5.5）<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/57257f641ccf31936472e6c192915c9c0e64340a2793ea534a9c56c2302d5acb/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666537613339313065642e706e67"><img src="https://camo.githubusercontent.com/57257f641ccf31936472e6c192915c9c0e64340a2793ea534a9c56c2302d5acb/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666537613339313065642e706e67" alt="圈出来的都可以" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe7a3910ed.png" style="max-width: 100%;"></a></p>
+<p>现在您已经准备完成，来看看怎么部署</p>
+<h2>教程</h2>
+<h3>配置</h3>
+<p>打开小皮，启动MySQL和Nginx，进入网站=&gt;创建网站</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d6f13cd23c37ae7c7edfda6f3b5decdde054295084e072c4142e157a8b7c8b33/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666537653465323165312e706e67"><img src="https://camo.githubusercontent.com/d6f13cd23c37ae7c7edfda6f3b5decdde054295084e072c4142e157a8b7c8b33/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666537653465323165312e706e67" alt="image-20240921145703229.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe7e4e21e1.png" style="max-width: 100%;"></a></p>
+<p>点击后相关配置如下<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/f1fda72eb190a4c59ecd5cd42b61a815ca516a454bfa4d876c1f2c63363166d0/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538303261353838632e706e67"><img src="https://camo.githubusercontent.com/f1fda72eb190a4c59ecd5cd42b61a815ca516a454bfa4d876c1f2c63363166d0/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538303261353838632e706e67" alt="image-20240921150157196.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe802a588c.png" style="max-width: 100%;"></a></p>
+<p>完成后点击确认。点击管理=&gt;网站首页设置，填入以下内容，点击确认。</p>
+<pre class="notranslate"><code class="notranslate">index.html error index.html index.php
+</code></pre>
+<p>接着，我们还需要修改一些文件</p>
+<p>找到lightpicture文件夹，点击public,找到名称为<code class="notranslate">nginx.htaccess</code>的文件，用记事本打开，输入以下内容保存即可</p>
+<pre class="notranslate"><code class="notranslate">location / { 
+   if (!-e $request_filename) {
+   		rewrite  ^(.*)$  /index.php?s=/$1  last;
+    }
+}
+</code></pre>
+<h3>安装</h3>
+<p>浏览器输入<code class="notranslate">localhost:端口号/install</code>，进入安装界面。举个例子，我填入的端口号是<code class="notranslate">82</code>，我就需要在浏览器输入<code class="notranslate">localhost:82/install</code></p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/503d273ca5c879ba8408f03f5befea95a721c7ca735fa81c105748d9db701d7d/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538323364616232322e706e67"><img src="https://camo.githubusercontent.com/503d273ca5c879ba8408f03f5befea95a721c7ca735fa81c105748d9db701d7d/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538323364616232322e706e67" alt="image-20240922113925332.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe823dab22.png" style="max-width: 100%;"></a></p>
+<p>在创建数据时填入您创建数据库时的<code class="notranslate">数据库名</code>，<code class="notranslate">数据库用户名</code>，<code class="notranslate">数据库密码</code>；<code class="notranslate">服务器</code>，<code class="notranslate">端口</code>不用设置。完成后点击确认</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/af3b66fad5a5e2601ec48123e88a3d43d847559c2dfafb9993612d45c1c3bef7/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538343365373462662e706e67"><img src="https://camo.githubusercontent.com/af3b66fad5a5e2601ec48123e88a3d43d847559c2dfafb9993612d45c1c3bef7/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538343365373462662e706e67" alt="image-20240922114131153.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe843e74bf.png" style="max-width: 100%;"></a></p>
+<p>请记住默认管理员账号，并及时<strong>修改密码，以防被盗</strong></p>
+<ul>
+<li>默认管理员账号：<code class="notranslate">admin</code></li>
+<li>默认管理员密码：<code class="notranslate">123456</code></li>
+</ul>
+<p>点击右上角头像，修改密码，当前密码就是<code class="notranslate">123456</code>，如果运营，请一定设定一个<strong>强力密码</strong></p>
+<p>到现在，您已经在本地搭建了LightPicture</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3a6ccd7d8d7a075a4c82823e973e186cb85ab02835434ce4a1535cefd441d7bc/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538616333626366372e706e67"><img src="https://camo.githubusercontent.com/3a6ccd7d8d7a075a4c82823e973e186cb85ab02835434ce4a1535cefd441d7bc/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538616333626366372e706e67" alt="image-20240922114346783.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe8ac3bcf7.png" style="max-width: 100%;"></a></p>
+<p>如果您没有发布到公网的需求，仅需个人本地使用，建议在小皮面板设置开机自启，这样，您随时可以访问到网站</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/1fcecbcbca7422dba9bcf5036ffd70dcf94ae20e355c0fcbd2121441ce47cf05/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538633937336633352e706e67"><img src="https://camo.githubusercontent.com/1fcecbcbca7422dba9bcf5036ffd70dcf94ae20e355c0fcbd2121441ce47cf05/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538633937336633352e706e67" alt="image-20240922114642191.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe8c973f35.png" style="max-width: 100%;"></a></p>
+<h2>LightPicture配置</h2>
+<h3>账户篇</h3>
+<p>使用默认管理员账户，会导致部分功能（配置邮箱发送验证码）无法使用，所以，再注册一个管理员账户是很有必要的</p>
+<p>点击系统管理=&gt;团队成员=&gt;新增，按照我的样子配置就可以，很简单，记得保存</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d951912f99025ce1522fa5e9d224439f80b67beeb2411369474078b39af4e7f0/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538653834643830312e706e67"><img src="https://camo.githubusercontent.com/d951912f99025ce1522fa5e9d224439f80b67beeb2411369474078b39af4e7f0/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666538653834643830312e706e67" alt="image-20240922115110663.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efe8e84d801.png" style="max-width: 100%;"></a></p>
+<p>邮箱一定要设置个能用的，角色组必须设置超级管理员，联系电话自愿</p>
+<p>接着，编辑您创建的成员，在操作栏点击编辑，勾选上<code class="notranslate">重置密码</code>，保存</p>
+<p>点击右上角头像，退出登录。点击右上角登录/注册，输入新增成员时的邮箱，密码是默认密码<code class="notranslate">123456</code>，登录。记得<strong>修改默认密码</strong></p>
+<h3>存储桶篇</h3>
+<p>目前市面上没有什么好的对象存储，要么要钱（这也很正常，但我没钱），要么测试域名30天有效期，要么没https访问。你以为绑定域名就能解决吗，确实是，但域名要<strong>备案</strong>，这就劝退了99％的人</p>
+<p>除付费OSS外，我从七牛和又拍中选择了<a href="https://console.upyun.com/" rel="nofollow">又拍云</a>，原因很简单，它的测试域名免费（但是仍然没有https访问）！如果您不使用又拍云，那么其他服务也大同小异</p>
+<p>账号注册和实名我就不多说了，非常简单，我们从创建服务开始</p>
+<p>进入控制台，选择创建云存储。请注意，接下来您填写的所有内容都会用到，请务必<strong>记牢</strong></p>
+<p>服务名称自愿，应用场景自愿，存储类型为标准，国内加速。新建一个操作员，记住操作员名称和密码（密码不可找回只能重置），权限全选</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/21150a5e226990f98dfbcf048b5aa70f7939ab414f199917210b71128f341c1b/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561323631333030352e706e67"><img src="https://camo.githubusercontent.com/21150a5e226990f98dfbcf048b5aa70f7939ab414f199917210b71128f341c1b/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561323631333030352e706e67" alt="image-20240922130545303.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efea2613005.png" style="max-width: 100%;"></a></p>
+<p>创建服务后进入配置界面</p>
+<p>接着，打开LightPicture，系统管理=&gt;存储桶=&gt;新建桶。存储源选择又拍云USS。桶名称自定义，其他配置见下图</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/126d0f9c7152422b81c19e9ee8b424460c600729cb661470272cdb73b458ac78/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561343364396334312e706e67"><img src="https://camo.githubusercontent.com/126d0f9c7152422b81c19e9ee8b424460c600729cb661470272cdb73b458ac78/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561343364396334312e706e67" alt="image-20240922135243666.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efea43d9c41.png" style="max-width: 100%;"></a></p>
+<p><code class="notranslate">OperatorName</code>和<code class="notranslate">OperatorPwd</code>为您创建的操作员信息，<code class="notranslate">Name</code>为操作员，<code class="notranslate">Pwd</code>为密码，如果您忘了，请看以下操作</p>
+<p>点击右上角名称=&gt;账号管理=&gt;操作员，找到创建服务时创建的操作员，点击编辑。操作员内容填入<code class="notranslate">OperatorName</code>，密码重新生成并复制，填入<code class="notranslate">OperatorPwd</code>，在又拍云和LightPicture的界面点击确定，尤其是又拍云，不保存的话生成的密码无效。</p>
+<p>在保存后，在LightPicture界面点击系统管理=&gt;角色组=&gt;编辑，存储桶选择新创建的又拍云存储桶，确定</p>
+<p>这时候，您可以在主页上传一张图片试试，成功就没问题了</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b2b9f1b93b96878ac83f2520444e7191b8049d851ba3ee3d0bba4bd9a7be1ab2/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561356263333066312e706e67"><img src="https://camo.githubusercontent.com/b2b9f1b93b96878ac83f2520444e7191b8049d851ba3ee3d0bba4bd9a7be1ab2/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561356263333066312e706e67" alt="image-20240922140910588.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efea5bc30f1.png" style="max-width: 100%;"></a></p>
+<h3>设置头像篇</h3>
+<p>先把头像通过LightPicture上传，在图库找到这张照片，点击详情，设为头像即可</p>
+<h3>设置上传格式篇</h3>
+<p>当我们上传一些格式不常见的图片或者其他文件时会遇到“不支持的格式”的提示，如何解决呢</p>
+<p>点击右上角头像=&gt;个人资料=&gt;左侧栏系统设置=&gt;允许上传后缀中添加上您需要的后缀，用英文逗号（<code class="notranslate">,</code>）连接，记得保存</p>
+<h3>多用户篇</h3>
+<p>找到系统设置（上面有讲）勾上开放注册，把用户出示配额和上传最大尺寸改为合适的值，勾掉<code class="notranslate">展示存储桶</code>，<code class="notranslate">展示角色组</code>和<code class="notranslate">展示团队成员</code>，当然，你不想弄也没事，记得保存。</p>
+<p>找到邮箱配置，我以<a href="https://mail.163.com" rel="nofollow">163邮箱</a>演示</p>
+<p>进入<a href="https://mail.163.com" rel="nofollow">163邮箱</a>，点击设置=&gt;常规设置=&gt;POP3/SMTP/IMAP,用手机发个验证码通过验证后复制授权密码后开启服务。复制提示栏里的SMTP服务器地址（smtp.163.com）到LightPicture的SMTP服务器框里，端口输入<code class="notranslate">465</code>，邮箱账号为自己的邮箱，密码为刚才复制的授权密码保存后点击发送测试邮件，在新增用户时填入的邮箱里查收信息，收到说明配置成功！</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0dc1b04afb639aa7c2bcd11c193bdcf65150ec9395cad45f187fa2601ae2e7a4/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561373930343133662e706e67"><img src="https://camo.githubusercontent.com/0dc1b04afb639aa7c2bcd11c193bdcf65150ec9395cad45f187fa2601ae2e7a4/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561373930343133662e706e67" alt="image-20240922142911712.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efea790413f.png" style="max-width: 100%;"></a></p>
+<p>您可以退出当前的账号后重新注册一个，看看能不能收到验证码</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/a65b1f749384d01e06dc158fc1349e3f8a6fd2137753ba1153862f8a040859ff/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561393463353761302e706e67"><img src="https://camo.githubusercontent.com/a65b1f749384d01e06dc158fc1349e3f8a6fd2137753ba1153862f8a040859ff/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363665666561393463353761302e706e67" alt="image-20240922143249337.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66efea94c57a0.png" style="max-width: 100%;"></a></p>
+<p>新增一个角色组并设为注册默认</p>
+<p>点击角色组=&gt;新增，分组名称自定义，存储桶选择又拍云的桶，分组权限勾选<code class="notranslate">允许其成员上传图片</code>和<code class="notranslate">允许其成员删除自己上传的图片</code>，勾选<code class="notranslate">注册默认</code>其他酌情勾选</p>
+<p>这时候，您的网站就支持了多用户</p>
+<h2>公开到公网</h2>
+<p>如果您想自己使用，完全不需要这步，这反而会增加风险，如果想要运营，其实也不建议你用LightPicture，兰空图床是更好的选择，如果您就想，那就继续往下看</p>
+<p>本教程使用<a href="https://www.cpolar.com" rel="nofollow">Cpolar内网穿透</a>来使LightPicture公开到公网</p>
+<p>进入<a href="https://www.cpolar.com" rel="nofollow">官网</a>，如果没有账号就右上角注册一个，不用实名。注册完后点击下载，选择适合自己电脑版本的Cpolar的软件，下载，下载后解压并后缀为<code class="notranslate">msi</code>的文件。</p>
+<p>在登陆窗口输入自己的账密登录</p>
+<p>进入后打开左侧的隧道管理=&gt;创建隧道。隧道名称填<code class="notranslate">lightpicture</code>,协议为<code class="notranslate">http</code>，本地地址填在小皮面板配置的端口，我的是<code class="notranslate">82</code>。域名选择随机域名（其他都要钱），ChinaVIP,点击创建。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ad614ddccc47f215eb652829d1e9b077bc1778789388ee26274501c5718a819d/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363666303036666236343037662e706e67"><img src="https://camo.githubusercontent.com/ad614ddccc47f215eb652829d1e9b077bc1778789388ee26274501c5718a819d/68747470733a2f2f776d696d672e636f6d2f692f313136392f323032342f30392f363666303036666236343037662e706e67" alt="1727006457097.png" data-canonical-src="https://wmimg.com/i/1169/2024/09/66f006fb6407f.png" style="max-width: 100%;"></a></p>
+<p>左侧栏点击状态=&gt;在线隧道列表，找到刚才创建的隧道，用协议为<code class="notranslate">https</code>的（不会被浏览器打上“不安全”的标志）到此为止，您的网站已经成功发布！</p>
+<h2>结尾</h2>
+<h3>在线体验</h3>
+<p>不容易啊，终于搞完了，如果你想在线体验，可以用我创建的网站，请注意，<strong>仅供体验</strong>，您上传的文件<strong>得不到永久保存</strong>！<br>
+<a href="https://53769dff.r21.vip.cpolar.cn" rel="nofollow">https://53769dff.r21.vip.cpolar.cn</a></p>
+<h3>获取所有文件</h3>
+<p>包含LightPicture部署文件，PhpStudy(小皮面板)，Cpolar（Windows端）<br>
+<a href="https://53769dff.r21.vip.cpolar.cn" rel="nofollow">https://53769dff.r21.vip.cpolar.cn</a></p></div>
+<div style="font-size:small;margin-top:8px;float:right;">❤️ 转载文章请注明出处，谢谢！❤️</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://peter267.github.io/">Peter's Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("07/18/2024"!=""){
+    var startSite=new Date("07/18/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z', 'copy': 'M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z', 'check': 'M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Peter267/peter267.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const createClipboardHTML = (codeContent, additionalClasses = '') => `
+        <pre class="notranslate"><code class="notranslate">${codeContent}</code></pre>
+        <div class="clipboard-container position-absolute right-0 top-0 ${additionalClasses}">
+            <clipboard-copy class="ClipboardButton btn m-2 p-0" role="button" style="display: inherit;">
+                <svg height="16" width="16" class="octicon octicon-copy m-2"><path d="${IconList["copy"]}"></path></svg>
+                <svg height="16" width="16" class="octicon octicon-check color-fg-success m-2 d-none"><path d="${IconList["check"]}"></path></svg>
+            </clipboard-copy>
+            <div class="copy-feedback">Copied!</div>
+        </div>
+    `;
+
+    const handleCodeElements = (selector = '') => {
+        document.querySelectorAll(selector).forEach(codeElement => {
+            const codeContent = codeElement.innerHTML;
+            const newStructure = document.createElement('div');
+            newStructure.className = 'snippet-clipboard-content position-relative overflow-auto';
+            newStructure.innerHTML = createClipboardHTML(codeContent);
+
+            const parentElement = codeElement.parentElement;
+            if (selector.includes('highlight')) {
+                parentElement.insertBefore(newStructure, codeElement.nextSibling);
+                parentElement.removeChild(codeElement);
+            } else {
+                parentElement.parentElement.replaceChild(newStructure, parentElement);
+            }
+        });
+    };
+
+    handleCodeElements('pre.notranslate > code.notranslate');
+    handleCodeElements('div.highlight > pre.notranslate');
+
+    let currentFeedback = null;
+    document.querySelectorAll('clipboard-copy').forEach(copyButton => {
+        copyButton.addEventListener('click', () => {
+            const codeContent = copyButton.closest('.snippet-clipboard-content').innerText;
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = codeContent;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempTextArea);
+
+            const copyIcon = copyButton.querySelector('.octicon-copy');
+            const checkIcon = copyButton.querySelector('.octicon-check');
+            const copyFeedback = copyButton.nextElementSibling;
+
+            if (currentFeedback && currentFeedback !== copyFeedback) {currentFeedback.style.display = 'none';}
+            currentFeedback = copyFeedback;
+
+            copyIcon.classList.add('d-none');
+            checkIcon.classList.remove('d-none');
+            copyFeedback.style.display = 'block';
+            copyButton.style.borderColor = 'var(--color-success-fg)';
+
+            setTimeout(() => {
+                copyIcon.classList.remove('d-none');
+                checkIcon.classList.add('d-none');
+                copyFeedback.style.display = 'none';
+                copyButton.style.borderColor = '';
+            }, 2000);
+        });
+    });
+});
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>
