@@ -176,4 +176,5 @@ https://53769dff.r21.vip.cpolar.cn
 ### 获取所有文件
 
 包含LightPicture部署文件，PhpStudy(小皮面板)，Cpolar（Windows端）
-https://53769dff.r21.vip.cpolar.cn
+https://peterwu.lanzout.com/b00uygd0fa
+提取码：1711
