@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/assets/GmeekVercount.js'></script>
+    <link rel="icon" href="https://vip.helloimg.com/i/2024/07/31/66aa2568dfba1.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="## 开头废话
+
+这两天通过[网友小宋](https://xyzbz.cn/)分享的文章看到了雅余大佬的[独立博客自省问卷15题](https://xyzbz.cn/nicelink?key=aHR0cHM6Ly95YXl1Lm5ldC80NjI2Lmh0bWw=)，两周没更了，今天特意水一期文章
+
+---
+
+## 独立博客自省问卷15题
+
+**1、你的博客更新频率是多少？**
+
+A.每周更新
+
+B.一周数篇
+
+C.一月1-2篇
+
+D.几个月一篇
+
+> C 最近忙了，一个月最多三篇
+
+**2、你的博客上次更新是什么时候？**
+
+A.本周
+
+B.上周
+
+C.上个月
+
+D.上季度
+
+> B 就是因为这样才水的这篇文章
+
+**3、你的博客文章是原创的吗？**
+
+A.坚持原创
+
+B.部分借鉴
+
+C.AI 帮我写的
+
+D.搬运别人的，而且不署名
+
+> ABC 95％原创，3％借鉴，2％AI写的
+
+**4、你觉得自己的文章对他人有帮助吗？**
+
+A.旨在对他人有启示
+
+B.多少有点意义
+
+C.每日每周流水账
+
+D.自我陶醉就好，管他呢
+
+> B 还是多少有点吧
+
+**5、你上次换博客主题/程序是什么时候？**
+
+A.上周
+
+B.上个月
+
+C.去年
+
+D.凭良心说，我多年都是一个主题
+
+> D 虽然想换但是懒，还没时间
+
+**6、你上一次捣腾博客主题代码是什么时候？**
+
+A.昨天，撸代码到凌晨
+
+B.每周必捣腾
+
+C.每月有那么一次
+
+D.一年有那么一次
+
+> C 在对一些博客自带的描述不满意或者增加功能但作者并没有直接给入口时会自己倒腾
+
+**7、你会对博客主题进行二次开发？**
+
+A.直接配置使用，省心不折腾
+
+B.时不时自己改改，搞点新花样，换图片，换字体，爽
+
+C.删除主题作者版权信息，改改样式，然后自我感觉良好
+
+D.改得面目全非，但保留原作者版权信息或注明
+
+> A 懒啊
+
+**8、你多久打开自己博客自我陶醉一次？**
+
+A.每天数次
+
+B.每周一次
+
+C.看心情
+
+D.一般都是照镜子，不看博客
+
+> AC 无聊时会看看，看完更无聊
+
+**9、你近期对自己博客域名什么感受？**
+
+A.想搞到一个 .COM 的域名
+
+B.如果域名能再短几个字符就更好了
+
+C.今年才换双拼域名了，明年再看看
+
+D.目前挺好，没想法
+
+> A 是真想啊，但是目前不允许我这样做
+
+**10、你每天都会看网站的流量统计吗？**
+
+A.每天看几次，今天又多了100PV
+
+B.每周回顾，看看流量趋势
+
+C.记得就看看
+
+D.没有搞流量统计，都是浮云
+
+> C 偶尔吧，看看博客最近怎么样，感觉这还是很重要的
+
+**11、你通过博客的广告赚到钱了吗？**
+
+A.有，能覆盖建站费用
+
+B.有，但付出大于收入
+
+C.没考虑通过博客流量赚钱
+
+D.拒绝广告，保证阅读体验
+
+> D 目前没有广告的方法，等以后有实力了可能会写付费文章赚钱
+
+**12、你去浏览别人的博客/网站主要为什么？**
+
+A.学习别人分享的知识
+
+B.搬运别人的内容
+
+C.看看别人怎么装修博客，自己也抄一下，感觉都比自己的好
+
+D.不爱看别人博客，自己爱写啥写啥
+
+> AC 主要还是看看写的什么吧
+
+**13、看到别人分享了一篇文章，你打开第一反应是什么？**
+
+A.哇，这域名真不错，怎么我没想到
+
+B.哇，这网站速度真快，图片延迟加载丝滑
+
+C.哇，这程序/主题不错，我也要抄一抄/留言问问哪里搞的
+
+D.看看文章内容
+
+> D 同12问。">
+<meta property="og:title" content="《独立博客自省问卷15题》答卷">
+<meta property="og:description" content="## 开头废话
+
+这两天通过[网友小宋](https://xyzbz.cn/)分享的文章看到了雅余大佬的[独立博客自省问卷15题](https://xyzbz.cn/nicelink?key=aHR0cHM6Ly95YXl1Lm5ldC80NjI2Lmh0bWw=)，两周没更了，今天特意水一期文章
+
+---
+
+## 独立博客自省问卷15题
+
+**1、你的博客更新频率是多少？**
+
+A.每周更新
+
+B.一周数篇
+
+C.一月1-2篇
+
+D.几个月一篇
+
+> C 最近忙了，一个月最多三篇
+
+**2、你的博客上次更新是什么时候？**
+
+A.本周
+
+B.上周
+
+C.上个月
+
+D.上季度
+
+> B 就是因为这样才水的这篇文章
+
+**3、你的博客文章是原创的吗？**
+
+A.坚持原创
+
+B.部分借鉴
+
+C.AI 帮我写的
+
+D.搬运别人的，而且不署名
+
+> ABC 95％原创，3％借鉴，2％AI写的
+
+**4、你觉得自己的文章对他人有帮助吗？**
+
+A.旨在对他人有启示
+
+B.多少有点意义
+
+C.每日每周流水账
+
+D.自我陶醉就好，管他呢
+
+> B 还是多少有点吧
+
+**5、你上次换博客主题/程序是什么时候？**
+
+A.上周
+
+B.上个月
+
+C.去年
+
+D.凭良心说，我多年都是一个主题
+
+> D 虽然想换但是懒，还没时间
+
+**6、你上一次捣腾博客主题代码是什么时候？**
+
+A.昨天，撸代码到凌晨
+
+B.每周必捣腾
+
+C.每月有那么一次
+
+D.一年有那么一次
+
+> C 在对一些博客自带的描述不满意或者增加功能但作者并没有直接给入口时会自己倒腾
+
+**7、你会对博客主题进行二次开发？**
+
+A.直接配置使用，省心不折腾
+
+B.时不时自己改改，搞点新花样，换图片，换字体，爽
+
+C.删除主题作者版权信息，改改样式，然后自我感觉良好
+
+D.改得面目全非，但保留原作者版权信息或注明
+
+> A 懒啊
+
+**8、你多久打开自己博客自我陶醉一次？**
+
+A.每天数次
+
+B.每周一次
+
+C.看心情
+
+D.一般都是照镜子，不看博客
+
+> AC 无聊时会看看，看完更无聊
+
+**9、你近期对自己博客域名什么感受？**
+
+A.想搞到一个 .COM 的域名
+
+B.如果域名能再短几个字符就更好了
+
+C.今年才换双拼域名了，明年再看看
+
+D.目前挺好，没想法
+
+> A 是真想啊，但是目前不允许我这样做
+
+**10、你每天都会看网站的流量统计吗？**
+
+A.每天看几次，今天又多了100PV
+
+B.每周回顾，看看流量趋势
+
+C.记得就看看
+
+D.没有搞流量统计，都是浮云
+
+> C 偶尔吧，看看博客最近怎么样，感觉这还是很重要的
+
+**11、你通过博客的广告赚到钱了吗？**
+
+A.有，能覆盖建站费用
+
+B.有，但付出大于收入
+
+C.没考虑通过博客流量赚钱
+
+D.拒绝广告，保证阅读体验
+
+> D 目前没有广告的方法，等以后有实力了可能会写付费文章赚钱
+
+**12、你去浏览别人的博客/网站主要为什么？**
+
+A.学习别人分享的知识
+
+B.搬运别人的内容
+
+C.看看别人怎么装修博客，自己也抄一下，感觉都比自己的好
+
+D.不爱看别人博客，自己爱写啥写啥
+
+> AC 主要还是看看写的什么吧
+
+**13、看到别人分享了一篇文章，你打开第一反应是什么？**
+
+A.哇，这域名真不错，怎么我没想到
+
+B.哇，这网站速度真快，图片延迟加载丝滑
+
+C.哇，这程序/主题不错，我也要抄一抄/留言问问哪里搞的
+
+D.看看文章内容
+
+> D 同12问。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://peter267.github.io//post/21.html">
+<meta property="og:image" content="https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg@240w_240h_1c_1s_!web-avatar-nav.avif">
+<title>《独立博客自省问卷15题》答卷</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">《独立博客自省问卷15题》答卷</h1>
+<div class="title-right">
+    <a href="https://peter267.github.io/" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/Peter267/peter267.github.io/issues/21" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><h2>开头废话</h2>
+<p>这两天通过<a href="https://xyzbz.cn/" rel="nofollow">网友小宋</a>分享的文章看到了雅余大佬的<a href="https://xyzbz.cn/nicelink?key=aHR0cHM6Ly95YXl1Lm5ldC80NjI2Lmh0bWw=" rel="nofollow">独立博客自省问卷15题</a>，两周没更了，今天特意水一期文章</p>
+<hr>
+<h2>独立博客自省问卷15题</h2>
+<p><strong>1、你的博客更新频率是多少？</strong></p>
+<p>A.每周更新</p>
+<p>B.一周数篇</p>
+<p>C.一月1-2篇</p>
+<p>D.几个月一篇</p>
+<blockquote>
+<p>C 最近忙了，一个月最多三篇</p>
+</blockquote>
+<p><strong>2、你的博客上次更新是什么时候？</strong></p>
+<p>A.本周</p>
+<p>B.上周</p>
+<p>C.上个月</p>
+<p>D.上季度</p>
+<blockquote>
+<p>B 就是因为这样才水的这篇文章</p>
+</blockquote>
+<p><strong>3、你的博客文章是原创的吗？</strong></p>
+<p>A.坚持原创</p>
+<p>B.部分借鉴</p>
+<p>C.AI 帮我写的</p>
+<p>D.搬运别人的，而且不署名</p>
+<blockquote>
+<p>ABC 95％原创，3％借鉴，2％AI写的</p>
+</blockquote>
+<p><strong>4、你觉得自己的文章对他人有帮助吗？</strong></p>
+<p>A.旨在对他人有启示</p>
+<p>B.多少有点意义</p>
+<p>C.每日每周流水账</p>
+<p>D.自我陶醉就好，管他呢</p>
+<blockquote>
+<p>B 还是多少有点吧</p>
+</blockquote>
+<p><strong>5、你上次换博客主题/程序是什么时候？</strong></p>
+<p>A.上周</p>
+<p>B.上个月</p>
+<p>C.去年</p>
+<p>D.凭良心说，我多年都是一个主题</p>
+<blockquote>
+<p>D 虽然想换但是懒，还没时间</p>
+</blockquote>
+<p><strong>6、你上一次捣腾博客主题代码是什么时候？</strong></p>
+<p>A.昨天，撸代码到凌晨</p>
+<p>B.每周必捣腾</p>
+<p>C.每月有那么一次</p>
+<p>D.一年有那么一次</p>
+<blockquote>
+<p>C 在对一些博客自带的描述不满意或者增加功能但作者并没有直接给入口时会自己倒腾</p>
+</blockquote>
+<p><strong>7、你会对博客主题进行二次开发？</strong></p>
+<p>A.直接配置使用，省心不折腾</p>
+<p>B.时不时自己改改，搞点新花样，换图片，换字体，爽</p>
+<p>C.删除主题作者版权信息，改改样式，然后自我感觉良好</p>
+<p>D.改得面目全非，但保留原作者版权信息或注明</p>
+<blockquote>
+<p>A 懒啊</p>
+</blockquote>
+<p><strong>8、你多久打开自己博客自我陶醉一次？</strong></p>
+<p>A.每天数次</p>
+<p>B.每周一次</p>
+<p>C.看心情</p>
+<p>D.一般都是照镜子，不看博客</p>
+<blockquote>
+<p>AC 无聊时会看看，看完更无聊</p>
+</blockquote>
+<p><strong>9、你近期对自己博客域名什么感受？</strong></p>
+<p>A.想搞到一个 .COM 的域名</p>
+<p>B.如果域名能再短几个字符就更好了</p>
+<p>C.今年才换双拼域名了，明年再看看</p>
+<p>D.目前挺好，没想法</p>
+<blockquote>
+<p>A 是真想啊，但是目前不允许我这样做</p>
+</blockquote>
+<p><strong>10、你每天都会看网站的流量统计吗？</strong></p>
+<p>A.每天看几次，今天又多了100PV</p>
+<p>B.每周回顾，看看流量趋势</p>
+<p>C.记得就看看</p>
+<p>D.没有搞流量统计，都是浮云</p>
+<blockquote>
+<p>C 偶尔吧，看看博客最近怎么样，感觉这还是很重要的</p>
+</blockquote>
+<p><strong>11、你通过博客的广告赚到钱了吗？</strong></p>
+<p>A.有，能覆盖建站费用</p>
+<p>B.有，但付出大于收入</p>
+<p>C.没考虑通过博客流量赚钱</p>
+<p>D.拒绝广告，保证阅读体验</p>
+<blockquote>
+<p>D 目前没有广告的方法，等以后有实力了可能会写付费文章赚钱</p>
+</blockquote>
+<p><strong>12、你去浏览别人的博客/网站主要为什么？</strong></p>
+<p>A.学习别人分享的知识</p>
+<p>B.搬运别人的内容</p>
+<p>C.看看别人怎么装修博客，自己也抄一下，感觉都比自己的好</p>
+<p>D.不爱看别人博客，自己爱写啥写啥</p>
+<blockquote>
+<p>AC 主要还是看看写的什么吧</p>
+</blockquote>
+<p><strong>13、看到别人分享了一篇文章，你打开第一反应是什么？</strong></p>
+<p>A.哇，这域名真不错，怎么我没想到</p>
+<p>B.哇，这网站速度真快，图片延迟加载丝滑</p>
+<p>C.哇，这程序/主题不错，我也要抄一抄/留言问问哪里搞的</p>
+<p>D.看看文章内容</p>
+<blockquote>
+<p>D 同12问。同时也会注重速度和程序/主题</p>
+</blockquote>
+<p><strong>14、你觉得博客哪方面更重要？</strong></p>
+<p>A.域名</p>
+<p>B.服务器</p>
+<p>C.主题</p>
+<p>D.内容</p>
+<blockquote>
+<p>D 内容才是博客的基石，其他都是次要的</p>
+</blockquote>
+<p><strong>15、近期通过写博客有哪些新收获？</strong></p>
+<p>A.知识面有拓展</p>
+<p>B.认识了新朋友</p>
+<p>C.写作水平提升</p>
+<p>D.通过知识变现</p>
+<blockquote>
+<p>ABC 都有吧，最主要的是知识面有拓展</p>
+</blockquote>
+<p>That's all</p></div>
+<div style="font-size:small;margin-top:8px;float:right;">本博客所有文章除特别声明外，均采用 CC BY-NC-SA 4.0 许可协议。转载请注明来自 Peter！</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://peter267.github.io/">Peter's Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("07/18/2024"!=""){
+    var startSite=new Date("07/18/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","Peter267/peter267.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script>
+
+</html>
