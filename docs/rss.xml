@@ -1,5 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Tue, 19 Nov 2024 14:38:37 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>Github强制用户开启2FA的临时解决办法</title><link>https://peter267.github.io//post/22.html</link><description>## 废话&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>无限进步！</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Sun, 24 Nov 2024 13:50:18 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>如何查看答案圈隐藏的答案</title><link>https://peter267.github.io//post/23.html</link><description>&gt; [!WARNING]&#13;
+&gt; 本教程不是让你抄答案用的&#13;
+&#13;
+## 废话&#13;
+&#13;
+当我们需要对（抄）答案但找不到纸质答案时，很多人喜欢在网上搜答案，但一般搜到的是这样的&#13;
+&#13;
+![需要登录/花钱才能看](https://wmimg.com/i/1169/2024/11/6742fadca9d99.png)&#13;
+&#13;
+找了很多平台，几乎没有免登录/花钱的。</description><guid isPermaLink="true">https://peter267.github.io//post/23.html</guid><pubDate>Sun, 24 Nov 2024 13:49:53 +0000</pubDate></item><item><title>Github强制用户开启2FA的临时解决办法</title><link>https://peter267.github.io//post/22.html</link><description>## 废话&#13;
 &#13;
 最近看到了Github强制用户开启2FA验证的界面，还说如果不开启就会限制用户行为（我不知道这样理解对不对）&#13;
 &#13;
