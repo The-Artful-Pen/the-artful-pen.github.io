@@ -1,37 +1,50 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>请迁移至新版博客，本博客仅为新博客提供RSS服务：https://peter267.zeabur.app</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Wed, 12 Feb 2025 09:25:04 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>国内大模型列表及入口</title><link>https://peter267.github.io//post/28.html</link><description>| 模型名称   | 开发商                 | 官网                                                     | 类型           |
-| ---------- | ---------------------- | -------------------------------------------------------- | -------------- |
-| 文心一言   | 百度                   | https://yiyan.baidu.com/                                 | 大语言模型     |
-| 通义       | 阿里巴巴                 | https://tongyi.aliyun.com/                             | 多模态大模型   |
-| 智谱清言   | 智谱AI                 | https://chatglm.cn/                                      | 大语言模型     |
-| DeepSeek   | 深度求索               | https://chat.deepseek.com/                               | 大语言模型     |
-| 腾讯元宝   | 腾讯                   | https://yuanbao.tencent.com/                             | 大语言模型     |
-| 豆包       | 字节跳动               | https://www.doubao.com/                                   | 大语言模型     |
-| 天工AI     | 昆仑万维               | https://www.tiangong.cn/                                 | 大语言模型     |
-| 跃问       | 阶跃星辰               | https://www.yuewen.cn/                                   | 大语言模型     |
-| 讯飞星火   | 科大讯飞               | https://xinghuo.xfyun.cn/                                | 大语言模型     |
-| 知乎直答   | 知乎                   | https://zhida.zhihu.com/                                 | 问答系统       |
-| Kimi       | 月之暗面               | https://kimi.moonshot.cn/                                | 大语言模型     |
-| 商量       | 商汤科技               | https://chat.sensetime.com/                              | 大语言模型     |
-| 百小应     | 百川智能               | https://ying.baichuan-ai.com/                            | 智能助手       |
-| 万知       | 万知科技               | https://www.wanzhi.com/                                   | 大语言模型     |
-| 海螺       | MiniMax               | https://hailuoai.com/                                    | 大语言模型     |
-| 秘塔AI搜索 | 秘塔科技               | https://metaso.cn/                                       | 智能搜索       |
-| 360智脑    | 360                   | https://chat.360.com/                                    | 大语言模型     |
-| 纳米 AI    | 360                   | https://www.n.cn/                                        | 大语言模型     |
-| 魔笔马良   | 魔尔线程               | https://maliang.mthreads.com/                            | 多模态生成模型 |
-| 紫东太初   | 中科院                 | https://taichu-web.ia.ac.cn/#/chat                       | 多模态大模型   |
-| DreaminaAI | Dreamina              | https://dreamina.capcut.com/                             | 多模态生成模型 |
-| 元象大模型 | 元象 XVERSE            | https://chat.xverse.cn/xchat                             | 大语言模型     |
-| 拓世大模型 | 拓世科技               |                                                          | 大语言模型     |
-| MOSS       | 复旦大学              |                                                          | 大语言模型     |
-| 西湖大模型 | 西湖星辰               | https://www.xinchenai.com/chat                           | 大语言模型     |
-| 天河天元   | 国家超级计算天津中心    |                                                          | 大语言模型     |
-| Chatlaw    | 北京大学              | http://chatlaw.cloud/                                    | 大语言模型     |
-| LightGPT   | 恒生                  | https://www.hs.net/lightgpt/                             | 大语言模型     |
-| TechGPT    | 东北大学              | http://techgpt.neukg.com/                                | 大语言模型     |
-| 鸿湖       | 中国联通              |                                                          | 多模态生成模型 |
-| 悟道·天鹰  | 北京智源人工智能研究院 |                                                          | 大语言模型     |。</description><guid isPermaLink="true">https://peter267.github.io//post/28.html</guid><pubDate>Wed, 12 Feb 2025 09:24:42 +0000</pubDate></item><item><title>电脑操作从入门到精通 1  ：认识你面前的电脑</title><link>https://peter267.github.io//post/27.html</link><description>作为电脑爱好者，看到很多朋友对基础操作不熟悉，这让我非常不爽。</description><guid isPermaLink="true">https://peter267.github.io//post/27.html</guid><pubDate>Sat, 08 Feb 2025 14:48:13 +0000</pubDate></item><item><title>2024年总结</title><link>https://peter267.github.io//post/26.html</link><description>首先祝大家新年快乐！
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>请迁移至新版博客，本博客仅为新博客提供RSS服务：https://peter267.zeabur.app</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Tue, 18 Feb 2025 12:48:11 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>国内大模型列表及入口</title><link>https://peter267.github.io//post/28.html</link><description>| 模型名称   | 开发商                 | 官网                                                     | 对话                                                   | 媒体创作                                              | 联网搜索                                            | 文件分析                                                 |
+| ---------- | ---------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
+| 文心一言   | 百度                   | https://yiyan.baidu.com/                                 | ✅                                | ✅                                | ✅ | ✅                                |
+| 通义       | 阿里巴巴                 | https://tongyi.aliyun.com/                             | ✅                            | ✅                            | ✅ | ✅                            |
+| 智谱清言   | 智谱AI                 | https://chatglm.cn/                                      | ✅                                     | ✅                                     | ✅ | ✅                                     |
+| DeepSeek   | 深度求索               | https://chat.deepseek.com/                               | ✅                              |                                | ✅ | ✅                              |
+| 腾讯元宝   | 腾讯                   | https://yuanbao.tencent.com/                             | ✅                            | ✅                            | ✅ | ✅                            |
+| 豆包       | 字节跳动               | https://www.doubao.com/                                   | ✅                                  | ✅                                  | ✅ | ✅                                  |
+| 天工AI     | 昆仑万维               | https://www.tiangong.cn/                                 | ✅                                | ✅                                | ✅ | ✅                                |
+| 跃问       | 阶跃星辰               | https://www.yuewen.cn/                                   | ✅                                  | ✅ | ✅ | ✅ |
+| 讯飞星火   | 科大讯飞               | https://xinghuo.xfyun.cn/                                | ✅                               | ✅ | ✅ | ✅ |
+| 知乎直答   | 知乎                   | https://zhida.zhihu.com/                                 | ✅                                |                                  | ✅ | ✅ |
+| Kimi       | 月之暗面               | https://kimi.moonshot.cn/                                | ✅                               | ❓ | ✅ | ✅ |
+| 商量       | 商汤科技               | https://chat.sensetime.com/                              | ✅                             | ✅ | ✅ | ✅ |
+| 百小应     | 百川智能               | https://ying.baichuan-ai.com/                            | ✅                           | ❓ | ❓ | ✅ |
+| 万知       | 万知科技               | https://www.wanzhi.com/                                   | ✅                                  | ✅ | ✅ | ✅ |
+| 海螺       | MiniMax               | https://hailuoai.com/                                    | ✅                                   | ✅ | ✅ | ✅ |
+| 秘塔AI搜索 | 秘塔科技               | https://metaso.cn/                                       |                                        |                                        | ✅                                      | ✅ |
+| 360智脑    | 360                   | https://chat.360.com/                                    | ✅                                   | ❓ | ❓ | ❓ |
+| 纳米 AI    | 360                   | https://www.n.cn/                                        |                                         |                                         | ✅ | ✅ |
+| 魔笔马良   | 魔尔线程               | https://maliang.mthreads.com/                            |                             | ✅                           |                             |                             |
+| 紫东太初   | 中科院自动化所、武汉人工智能研究院 | https://taichu-web.ia.ac.cn/#/chat                       | ✅                      | ✅ | ✅ | ✅ |
+| 即梦 | 脸萌科技          | https://jimeng.jianying.com/ |                              | ✅                            |                              |                              |
+| 元象大模型 | 元象 XVERSE            | https://chat.xverse.cn/xchat/index                 | ✅                            |                              | ❓ |  |
+| 拓世大模型 | 拓世科技               |                                                          | ❓ | ❓ | ❓ | ❓ |
+| MOSS       | 复旦大学              |                                                          | ❓ | ❓ | ❓ | ❓ |
+| 西湖大模型 | 西湖星辰               | https://www.xinchenai.com/chat                          | ✅ | ✅ | ❓ | ✅ |
+| 天河天元   | 国家超级计算天津中心    |                                                          | ✅ | ❓ | ❓ | ❓ |
+| Chatlaw    | 北京大学              | http://chatlaw.cloud/                                    | ✅ |  | ❓ |                                     |
+| LightGPT   | 恒生                  | https://www.hs.net/lightgpt/                             | ❓ | ❓ | ❓ | ❓ |
+| TechGPT    | 东北大学              | http://techgpt.neukg.com/                                | ❓ | ❓ | ❓ | ❓ |
+| 鸿湖       | 中国联通              |                                                          | ❓ | ❓ | ❓ | ❓ |
+| 悟道·天鹰  | 北京智源人工智能研究院 | https://www.baai.ac.cn/portal/article/index/cid/49/id/518.html | ✅ | ❓ | ❓ | ❓ |
+| 书生 | 上海人工智能实验室、商汤科技、香港中文大学、复旦大学、上海交通大学 | https://intern-ai.org.cn/ | ✅ | ✅ | ❓ | ❓ |
+| TeleChat | 中国电信 | | ✅ | ❓ | ❓ | ❓ |
+| FlagOpen | 北京智源人工智能研究院 | | ❓ | ❓ | ❓ | ❓ |
+
+- ✅：支持
+- ❓：未知
+- 空：不支持
+
+| 贡献者 | 贡献内容                                                     |
+| ---------- | ------------------------------------------------------------ |
+| Peter267   | 文心一言、通义、智谱清言、DeepSeek、腾讯元宝、豆包、天工AI、跃问、讯飞星火、知乎直答、Kimi、商量、百小应、万知、海螺、秘塔AI搜索、360智脑、纳米AI、魔笔马良、紫东太初、DreaminaAI、元象大模型、拓世大模型、MOSS、西湖大模型、天河天元、Chatlaw、LightGPT、TechGPT、鸿湖、悟道·天鹰、书生、TeleChat、FlagOpen 的所有信息 |
+
+本表格还有不全（错误）之处，欢迎评论区补充（指正）。</description><guid isPermaLink="true">https://peter267.github.io//post/28.html</guid><pubDate>Wed, 12 Feb 2025 09:24:42 +0000</pubDate></item><item><title>电脑操作从入门到精通 1  ：认识你面前的电脑</title><link>https://peter267.github.io//post/27.html</link><description>作为电脑爱好者，看到很多朋友对基础操作不熟悉，这让我非常不爽。</description><guid isPermaLink="true">https://peter267.github.io//post/27.html</guid><pubDate>Sat, 08 Feb 2025 14:48:13 +0000</pubDate></item><item><title>2024年总结</title><link>https://peter267.github.io//post/26.html</link><description>首先祝大家新年快乐！
 
 最近更新较少，主要原因有三：
 
