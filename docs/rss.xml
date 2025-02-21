@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>请迁移至新版博客，本博客仅为新博客提供RSS服务：https://peter267.zeabur.app</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Tue, 18 Feb 2025 12:48:11 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>国内大模型列表及入口</title><link>https://peter267.github.io//post/28.html</link><description>| 模型名称   | 开发商                 | 官网                                                     | 对话                                                   | 媒体创作                                              | 联网搜索                                            | 文件分析                                                 |
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Peter's Blog</title><link>https://peter267.github.io/</link><description>请迁移至新版博客，本博客仅为新博客提供RSS服务：https://peter267.zeabur.app</description><copyright>Peter's Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://i1.hdslb.com/bfs/face/4963f665e12a4703a1c54adc252fcae4b7e93005.jpg</url><title>avatar</title><link>https://peter267.github.io/</link></image><lastBuildDate>Fri, 21 Feb 2025 10:30:47 +0000</lastBuildDate><managingEditor>Peter's Blog</managingEditor><ttl>60</ttl><webMaster>Peter's Blog</webMaster><item><title>国内大模型列表及入口</title><link>https://peter267.github.io//post/28.html</link><description>| 模型名称   | 开发商                 | 官网                                                     | 对话                                                   | 媒体创作                                              | 联网搜索                                            | 文件分析                                                 |
 | ---------- | ---------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
 | 文心一言   | 百度                   | https://yiyan.baidu.com/                                 | ✅                                | ✅                                | ✅ | ✅                                |
 | 通义       | 阿里巴巴                 | https://tongyi.aliyun.com/                             | ✅                            | ✅                            | ✅ | ✅                            |
@@ -31,10 +31,21 @@
 | LightGPT   | 恒生                  | https://www.hs.net/lightgpt/                             | ❓ | ❓ | ❓ | ❓ |
 | TechGPT    | 东北大学              | http://techgpt.neukg.com/                                | ❓ | ❓ | ❓ | ❓ |
 | 鸿湖       | 中国联通              |                                                          | ❓ | ❓ | ❓ | ❓ |
-| 悟道·天鹰  | 北京智源人工智能研究院 | https://www.baai.ac.cn/portal/article/index/cid/49/id/518.html | ✅ | ❓ | ❓ | ❓ |
+| 悟道·天鹰  | 北京智源人工智能研究院 | [https://www.baai.ac.cn](https://www.baai.ac.cn/portal/article/index/cid/49/id/518.html) | ✅ | ❓ | ❓ | ❓ |
 | 书生 | 上海人工智能实验室、商汤科技、香港中文大学、复旦大学、上海交通大学 | https://intern-ai.org.cn/ | ✅ | ✅ | ❓ | ❓ |
 | TeleChat | 中国电信 | | ✅ | ❓ | ❓ | ❓ |
 | FlagOpen | 北京智源人工智能研究院 | | ❓ | ❓ | ❓ | ❓ |
+| ChatYuan | 元语智能 | 停止服务 |  |  |  |  |
+| 雅意 | 中科闻歌 | https://yayi.wenge.com/ | ✅ | ✅ | ✅ | ✅ |
+| 活字 | 哈尔滨工业大学 | | ✅ | ✅ | ✅ | ✅ |
+| 流萤 | 中山大学 | | ✅ | ❓ | ❓ | ❓ |
+| PointLLM | 香港中文大学 | | ✅ | ❓ | ❓ | ❓ |
+| 序列猴子 | 羽扇智 | https://openapi.mobvoi.com/ | ✅ | ✅ | ✅ | ✅ |
+| 玉言 | 网易 | | ✅ | ❓ | ❓ | ❓ |
+| 天工智力 | 奇点智源 | | ✅ | ❓ | ❓ | ❓ |
+| SUS-Chat | 南方科技大学 | | ✅ | ❓ | ❓ | ❓ |
+| UniDoc | 中科大 | | ❓ | ❓ | ❓ | ✅ |
+| 棱镜 | 吉林大学 | | ✅ | ❓ | ❓ | ❓ |
 
 - ✅：支持
 - ❓：未知
@@ -42,7 +53,7 @@
 
 | 贡献者 | 贡献内容                                                     |
 | ---------- | ------------------------------------------------------------ |
-| Peter267   | 文心一言、通义、智谱清言、DeepSeek、腾讯元宝、豆包、天工AI、跃问、讯飞星火、知乎直答、Kimi、商量、百小应、万知、海螺、秘塔AI搜索、360智脑、纳米AI、魔笔马良、紫东太初、DreaminaAI、元象大模型、拓世大模型、MOSS、西湖大模型、天河天元、Chatlaw、LightGPT、TechGPT、鸿湖、悟道·天鹰、书生、TeleChat、FlagOpen 的所有信息 |
+| Peter267   | 文心一言、通义、智谱清言、DeepSeek、腾讯元宝、豆包、天工AI、跃问、讯飞星火、知乎直答、Kimi、商量、百小应、万知、海螺、秘塔AI搜索、360智脑、纳米AI、魔笔马良、紫东太初、DreaminaAI、元象大模型、拓世大模型、MOSS、西湖大模型、天河天元、Chatlaw、LightGPT、TechGPT、鸿湖、悟道·天鹰、书生、TeleChat、FlagOpen 、ChatYuan、雅意、活字、流萤、PointLLM、序列猴子、玉言、天工智力、SUS-Chat、UniDoc、棱镜 的所有信息 |
 
 本表格还有不全（错误）之处，欢迎评论区补充（指正）。</description><guid isPermaLink="true">https://peter267.github.io//post/28.html</guid><pubDate>Wed, 12 Feb 2025 09:24:42 +0000</pubDate></item><item><title>电脑操作从入门到精通 1  ：认识你面前的电脑</title><link>https://peter267.github.io//post/27.html</link><description>作为电脑爱好者，看到很多朋友对基础操作不熟悉，这让我非常不爽。</description><guid isPermaLink="true">https://peter267.github.io//post/27.html</guid><pubDate>Sat, 08 Feb 2025 14:48:13 +0000</pubDate></item><item><title>2024年总结</title><link>https://peter267.github.io//post/26.html</link><description>首先祝大家新年快乐！
 
